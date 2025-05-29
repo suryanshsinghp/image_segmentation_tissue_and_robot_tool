@@ -1,3 +1,3 @@
-# Image Segmentation of tissue and medical tool
+# Image Segmentation of tissue and robot tool
 
-This project was part of Deep Learning course at JHU with some parts of code provided. The dataset is from SegSTRONG-C 2024 challenge of endoscopic frame images.
+This project was part of Deep Learning course (Fall 2024) at JHU with some parts of code, input data and data loader  provided. The dataset is from SegSTRONG-C 2024 challenge of endoscopic frame images. First, a neural network is trained for binary image segmentation (of the tissue and tool) and tested on unseen samples. Then the same model is tested on new unseen samples that are (non-adversarial) corrupted with blood. The model is never trained on samples containing images of tool and tissue with blood but data augmentation techniques are used to make the model robust. The underlying network is U-Net with DICE loss.
